@@ -4,12 +4,12 @@ const routes:RouteRecordRaw[] = [
   {
     path: '/',
     name: 'home-index',
-    component: () => import('../views/home/HomeIndex.vue')
+    component: () => import('@/views/home/HomeIndex.vue')
   },
   {
     path: '/login',
     name: 'login-index',
-    component: () => import('../views/login/LoginIndex.vue')
+    component: () => import('@/views/login/LoginIndex.vue')
   }
 ]
 
