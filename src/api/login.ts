@@ -1,9 +1,9 @@
 import request from '@/utils/request'
-import { logoType } from './types/login'
+import type { logoType } from './types/login'
 
 export const getLogo = () => {
   return request<logoType>({
     method: 'GET',
-    url: '/logo'
+    url: '/admin/logo'
   })
 }

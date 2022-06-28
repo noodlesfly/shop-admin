@@ -6,6 +6,15 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  server: {
+    https: true,
+    proxy: {
+      '/admin': {
+        target: 'https://shop.fed.lagounews.com/api',
+        changeOrigin: true
+      }
+    }
+  },
   plugins: [vue(), eslint({
     cache: false
   }), vueJsx()],

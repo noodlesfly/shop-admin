@@ -10,12 +10,13 @@
 </template>
 <script lang='ts' setup>
 import { getLogo } from '@/api/login'
-import { logoType } from '@/api/types/login'
+import type { logoType } from '@/api/types/login'
 import { onMounted, ref } from 'vue'
 const logo = ref<logoType['logo']>('')
-onMounted(async () => {
-  const data = await getLogo()
-  logo.value = data.logo
+onMounted(() => {
+  getLogo().then(data => {
+    logo.value = data.logo
+  })
 })
 </script>
 <style lang='scss' scoped>

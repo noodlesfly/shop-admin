@@ -2,11 +2,12 @@
   <div class="home-index">
     首页
     {{ store.state.count }}
-    <login />
+    <el-button type="warning">
+      Warning
+    </el-button>
   </div>
 </template>
 <script lang='ts' setup>
-import Login from '@/views/login/LoginIndex.vue'
 import { useStore } from '../../store'
 const store = useStore()
 </script>
