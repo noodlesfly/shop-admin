@@ -1,9 +1,6 @@
 <template>
-  <div class="home-index">
-    首页
-    <el-button type="warning">
-      Warning
-    </el-button>
+  <div class="rule-index">
+    rule-index
   </div>
 </template>
 <script lang='ts' setup>

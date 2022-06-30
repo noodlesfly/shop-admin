@@ -10,7 +10,8 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: ['vue', '@typescript-eslint'],
-  rules: {},
+  rules: {
+  },
   globals: {
     defineProps: 'readonly',
     defineEmits: 'readonly',

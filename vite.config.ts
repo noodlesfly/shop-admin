@@ -7,7 +7,6 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    https: true,
     proxy: {
       '/admin': {
         target: 'https://shop.fed.lagounews.com/api',
