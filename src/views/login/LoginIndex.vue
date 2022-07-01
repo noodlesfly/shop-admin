@@ -20,7 +20,7 @@ onMounted(() => {
 })
 </script>
 <style lang='scss' scoped>
-.login-index {
-  color: $primary
-}
+// .login-index {
+//   // color: $primary
+// }
 </style>
