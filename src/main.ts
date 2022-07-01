@@ -4,6 +4,7 @@ import router from './router'
 import { store, key } from './store/index'
 import ElementPlus from './plugins/element-plus'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+import AppEditor from './components/app-editor/index'
 import './styles/index.scss'
 
 const app = createApp(App)
@@ -14,5 +15,6 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 
 app.use(router as any)
   .use(store, key)
+  .use(AppEditor)
   .use(ElementPlus)
   .mount('#app')
